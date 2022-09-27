@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
+
+html,body{
+  height:100%
+}
+body {
+  background-image: url(backgroundpic.jpg);
+  background-size:cover;
+  margin:0
+}
+.logo {
+  text-align: center;
+  width: 65%;
+  height: 250px;
+  margin: auto;
+  position: absolute;
+  top: 35%;
+  left: 17%;
+  right: 50%;
+  bottom: 40%;
+  user-select: none;
+}
+
+.logo b {
+  font: 400 19vh "Vibur";
+  color: #e9fffd;
+  ;
+  text-shadow: 0 0 7px #8b3cc3,
+      0 0 4px #8b3cc3,
+      0 0 11px #8b3cc3,
+      0 0 19px #8b3cc3,
+      0 0 40px #ee4ac5,
+      0 0 80px #ee4ac5,
+      0 0 90px #ee4ac5,
+      0 0 100px #ee4ac5,
+      0 0 150px #ee4ac5;
+}
+.logo b span{
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+
+.logo b span:nth-last-of-type() {
+    animation: blink linear infinite 4s;
+}
+
+@keyframes blink {
+    78% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    79%{
+       color: #333;
+    }
+    80% {
+      
+      text-shadow: none;
+    }
+    81% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    82% {
+      color: #333;
+      text-shadow: none;
+    }
+    83% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    92% {
+      color: #333;
+      text-shadow: none;
+    }
+    92.5% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+  }
+
+/* styling the Github link */
+.bottom {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  bottom: 0;
+  width: 400px;
+  height: 180px;
+  
+}
+.outer{
+  position: relative;
+  margin: 0 50px;
+  background: #111;
+}
+.button{
+  height: 70px;
+  width: 220px;
+  border-radius: 50px;
+}
+.outer button, .outer span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outer button {
+  background: #111;
+  color: #f2f2f2;
+  outline: none;
+  border: none;
+  font-family: 'Vibur';
+  font-size: 25px;
+  z-index: 9;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.button button{
+  height: 60px;
+  width: 210px;
+  border-radius: 50px;
+}
+.outer:hover{
+  background: linear-gradient(#be00f8, #ffe600, #ee4ac5);
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
